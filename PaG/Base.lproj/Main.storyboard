@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PaG" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K77-Ip-43S">
+                                <rect key="frame" x="33" y="287" width="90" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0uS-dQ-rvm"/>
+                                    <constraint firstAttribute="width" constant="90" id="Zzg-WT-Ul1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="copy-symbol_318-40213"/>
+                                <connections>
+                                    <action selector="CopyPasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0e1-id-NnQ"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="4" translatesAutoresizingMaskIntoConstraints="NO" id="iom-mM-AHV">
+                                <rect key="frame" x="33" y="157" width="254" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="tnp-xL-0DK"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="4"/>
+                                    <segment title="6"/>
+                                    <segment title="8"/>
+                                    <segment title="10"/>
+                                    <segment title="12"/>
+                                </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GC-KJ-pmM">
+                                <rect key="frame" x="29" y="65" width="258" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="33"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-FT-FTA">
+                                <rect key="frame" x="29" y="220" width="258" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="33"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIR-qY-DA1">
+                                <rect key="frame" x="187" y="287" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="I8R-JC-ZpH"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZFk-IT-Hcz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fdgdfgfd"/>
+                                <connections>
+                                    <action selector="RegeneratePasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLE-eg-L4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K77-Ip-43S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="2Qn-pm-pMy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ApQ-FT-FTA" secondAttribute="trailing" constant="17" id="71i-em-U1z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YIR-qY-DA1" secondAttribute="bottom" constant="93" id="C2R-IP-mFL"/>
+                            <constraint firstItem="iom-mM-AHV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="137" id="S6j-E4-dgv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ApQ-FT-FTA" secondAttribute="bottom" constant="220" id="V1O-Nz-Aj4"/>
+                            <constraint firstItem="4GC-KJ-pmM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="X6H-I4-TBQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4GC-KJ-pmM" secondAttribute="trailing" constant="17" id="XC7-FQ-lnU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iom-mM-AHV" secondAttribute="trailing" constant="17" id="YNI-sT-Slk"/>
+                            <constraint firstItem="ApQ-FT-FTA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="cgD-NN-Lpx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K77-Ip-43S" secondAttribute="bottom" constant="93" id="eGL-cu-msc"/>
+                            <constraint firstItem="ApQ-FT-FTA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="sEq-82-dsh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YIR-qY-DA1" secondAttribute="trailing" constant="17" id="veB-7Y-1Y4"/>
+                            <constraint firstItem="4GC-KJ-pmM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="w70-wI-MQa"/>
+                            <constraint firstItem="iom-mM-AHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="ylQ-ob-9EZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DigitNumberSegCtrl" destination="iom-mM-AHV" id="mST-fZ-ZGU"/>
+                        <outlet property="GeneratedPasswordLabel" destination="ApQ-FT-FTA" id="BYz-vD-pTH"/>
+                        <outlet property="NoticeLabel" destination="4GC-KJ-pmM" id="i2T-7y-mJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.625" y="118.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="copy-symbol_318-40213" width="626" height="626"/>
+        <image name="fdgdfgfd" width="350" height="350"/>
+    </resources>
+</document>
